@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas Page</title>
+    <script>
+            // window.onload =function()
+            // {
+            //     var canvas = document.getElementById("MyFirstCanvas");
+            //     var context = canvas.getContext("2d");
+            //     //line
+            //     context.moveTo(0,0);
+            //     context.lineTo(600,600);
+            //     context.moveTo(600,0);
+            //     context.lineTo(0,600);
+            //     context.moveTo(0,300);
+            //     context.lineTo(600,300);
+            //     context.moveTo(300,0);
+            //     context.lineTo(300,600);
+            //     context.lineWidth = 5;
+            //     context.strokeStyle = "red";
+            //     context.stroke();
+            // }
+            // window.onload = function()
+            // {
+            //     var canvas = document.getElementById("MyFirstCanvas");
+            //     var shape = canvas.getContext("2d");
+            //    //Circle
+            //    //SYNTAX :- context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+            //     shape.arc(300,300,170,0,2*Math.PI,false)
+            //     shape.lineWidth = 10;
+            //     shape.fillStyle = "yellow";
+            //     shape.fill();
+            //     shape.strokeStyle = "red";         
+            //   shape.stroke();
+            // }
+            // window.onload = function()
+            // {
+            //     var canvas = document.getElementById("MyFirstCanvas");
+            //     var shape = canvas.getContext("2d");
+            //    //ARC
+            //    //SYNTAX :- context.arc(centerX, centerY, radius,startingAngle,endingAngle, false);
+            //     shape.arc(300,300,100,0.1*Math.PI,2*Math.PI,false)
+            //     shape.lineWidth = 5;
+            //     shape.strokeStyle = "blue";  
+            //   shape.stroke();
+            //  }
+             window.onload = function()
+            {
+                var canvas = document.getElementById("MyFirstCanvas");
+                var shape = canvas.getContext("2d");
+                //Rectangle
+                //SYNTAX :- shape.rect(x, y, width, height);
+                 shape.rect(200,200,200,200);
+                shape.lineWidth = 10;
+                shape.fillStyle = "brown";
+                shape.fill();
+                shape.strokeStyle = "gold";  
+                shape.stroke();
+            }
+    </script>
+    <style>
+        canvas {
+            border: 2px solid black;
+            
+            background-color : cornsilk;
+        }
+    </style>
+</head>
+<body style="background-color: aqua">
+    <canvas id="MyFirstCanvas" width="600" height="600"></canvas>
+</body>
+</html>
